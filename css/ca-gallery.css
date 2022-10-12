@@ -84,7 +84,7 @@ body {
 .offcanvas-aside {
     position: fixed;
     height: 100%;
-    background: rgb(172, 238, 137);
+    background: rgb(100, 62, 107);
     width: 80vw;
     right: -80vw;
     z-index: 10;
@@ -107,13 +107,59 @@ body {
     height: 20%;
 }
 
+.contact-form {
+    width: 95%;
+}
+
+.form-container {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: flex-start;
+    background: white;
+    max-width: 400px;
+    margin: 1rem auto;
+    padding-left: 1rem;
+    border-radius: 20px;
+}
+
+form p {
+    margin-top: 0.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0;
+}
+
+input {
+    border: 1px solid lightgray;
+    padding: 0.5rem 0.2rem;
+    padding-right: 8rem;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+form textarea {
+    border: 1px solid lightgray;
+    padding: 0.5rem 0.2rem;
+    padding-right: 5rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+form button {
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
 @media (min-width: 575px) {
     .offcanvas-btn-open {
-        margin-right: 50vw;
+        margin-right: 60vw;
     }
     .offcanvas-aside {
-        width: 50vw;
-        right: -50vw;
+        width: 60vw;
+        right: -60vw;
     }
     #portfolio-img {
         height: 196px;

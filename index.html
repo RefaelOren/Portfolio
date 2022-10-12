@@ -9,7 +9,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
 
-        <title>Coding Academy</title>
+        <title>Refael portfolio</title>
 
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -53,6 +53,34 @@
             <a href="./projects/touchTheNums/index.html"></a>
             <!-- Contact -->
             <section class="contact-form">
+                <div class="form-container">
+                    <form onsubmit="onLogin(event)">
+                        <p>Your E-mail</p>
+                        <input
+                            type="email"
+                            placeholder="name@example.com"
+                            name="email"
+                        />
+                        <p>Subject</p>
+                        <input
+                            type="text"
+                            placeholder="Type subject here"
+                            name="subject"
+                        />
+                        <p>Message Body</p>
+                        <textarea
+                            placeholder="Type message here"
+                            name="msg"
+                            id=""
+                            cols="25"
+                            rows="5"
+                        ></textarea>
+                        <br />
+                        <button type="button" class="btn btn-success">
+                            submit
+                        </button>
+                    </form>
+                </div>
                 <h4>Contact Me</h4>
                 <img src="img/me.jpg" alt="rafi" />
             </section>
