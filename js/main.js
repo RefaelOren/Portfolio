@@ -11,7 +11,7 @@ function renderProjs(projs) {
             (proj) =>
                 `
     <div class="col-md-4 col-sm-6 portfolio-item">
-        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4" 
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal" 
         onclick="onClickedProj('${proj.id}')">
            <div class="portfolio-hover">
              <div class="portfolio-hover-content">
@@ -37,5 +37,18 @@ function onClickedProj(projId) {
 
 function renderProjModal(projId) {
     const proj = getProjById(projId);
-    var elProjModal = document.querySelector();
+    var elProjModal = document.querySelector('.modal-body');
+    elProjModal.querySelector('h2').innerText = proj.name;
+    elProjModal.querySelector('.item-intro').innerText = proj.phrase;
+    elProjModal.querySelector('img').src = proj.url;
+    elProjModal.querySelector('.desc').innerText = proj.desc;
+    elProjModal.querySelector('ul .date').innerText =
+        'Date: ' + getDate(proj.publishAt);
+    elProjModal.querySelector('ul .category').innerText =
+        'Category: ' + proj.title;
+    document.querySelector('.site-link').href = proj.link;
+}
+
+function getDate(timeStamp) {
+    return new Date(timeStamp).toLocaleString();
 }
