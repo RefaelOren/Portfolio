@@ -240,7 +240,7 @@ form button {
 header.masthead {
     text-align: center;
     color: white;
-    background-image: url('../img/header-bg.jpg');
+    background-image: url('../img/hero.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -268,6 +268,11 @@ header.masthead .intro-text .intro-heading {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
+
+.hero-animation {
+    transform: translateX(100px);
+}
+
 @media (min-width: 768px) {
     header.masthead .intro-text {
         padding-top: 300px;
@@ -290,10 +295,41 @@ header.masthead .intro-text .intro-heading {
             sans-serif;
         text-transform: uppercase;
     }
+    .hero-animation {
+        transform: translateX(200px);
+    }
 }
+
 .service-heading {
     margin: 15px 0;
     text-transform: none;
+}
+
+.animation-container1 {
+    transform: translateY(-60px);
+    width: 30vw;
+    margin: 0rem auto;
+}
+
+.animation1 {
+    transform: translateX(-45px);
+}
+
+.animation-container2 {
+    transform: translateY(-25px);
+    width: 30vw;
+    margin: 0rem auto;
+}
+.animation2 {
+    transform: translateX(-60px);
+}
+.animation-container3 {
+    transform: translateY(-75px);
+    width: 30vw;
+    margin: 1rem auto;
+}
+.animation3 {
+    transform: translateX(-50px);
 }
 
 #portfolio .portfolio-item {
@@ -612,6 +648,9 @@ header.masthead .intro-text .intro-heading {
     .timeline > li.timeline-inverted > .timeline-panel {
         padding: 0 20px 20px;
     }
+    .hero-animation {
+        transform: translateX(330px);
+    }
 }
 @media (min-width: 1200px) {
     .timeline > li {
@@ -630,6 +669,9 @@ header.masthead .intro-text .intro-heading {
     }
     .timeline > li.timeline-inverted > .timeline-panel {
         padding: 0 100px 20px 20px;
+    }
+    .hero-animation {
+        transform: translateX(420px);
     }
 }
 .team-member {

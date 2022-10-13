@@ -52,3 +52,11 @@ function renderProjModal(projId) {
 function getDate(timeStamp) {
     return new Date(timeStamp).toLocaleString();
 }
+
+function onSubmit() {
+    const elEmail = document.querySelector('[name=email]').value;
+    const elSubject = document.querySelector('[name=subject]').value;
+    const elMsg = document.querySelector('[name=msg]').value;
+    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${elEmail}&su=${elSubject}&b
+ody=${elMsg}`);
+}
